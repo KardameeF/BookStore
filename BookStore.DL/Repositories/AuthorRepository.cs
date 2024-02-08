@@ -1,8 +1,8 @@
-﻿using BookStore.DL.Interfaces;
-using BookStore.DL.MemoryDb;
-using BookStore.Models.Models.Users;
+﻿using ComicBookStore.DL.Interfaces;
+using ComicBookStore.DL.MemoryDb;
+using ComicBookStore.Models.Models.Users;
 
-namespace BookStore.DL.Repositories
+namespace ComicBookStore.DL.Repositories
 {
     public class AuthorRepository : IAuthorRepository
     {

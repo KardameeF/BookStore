@@ -1,17 +1,17 @@
-﻿using BookStore.BL.Interfaces;
-using BookStore.Models.Requests;
-using BookStore.Models.Responses;
+﻿using ComicBookStore.BL.Interfaces;
+using ComicBookStore.Models.Requests;
+using ComicBookStore.Models.Responses;
 
-namespace BookStore.BL.Services
+namespace ComicBookStore.BL.Services
 {
     public class LibraryService : ILibraryService
     {
         private readonly IAuthorService _authorService;
-        private readonly IBookService _bookService;
+        private readonly IComicBookService _bookService;
 
         public LibraryService(
             IAuthorService authorService,
-            IBookService bookService)
+            IComicBookService bookService)
         {
             _authorService = authorService;
             _bookService = bookService;

@@ -1,30 +1,30 @@
-﻿using BookStore.BL.Interfaces;
-using BookStore.DL.Interfaces;
-using BookStore.Models.Models;
+﻿using ComicBookStore.BL.Interfaces;
+using ComicBookStore.DL.Interfaces;
+using ComicBookStore.Models.Models;
 
-namespace BookStore.BL.Services
+namespace ComicBookStore.BL.Services
 {
-    public class BookService : IBookService
+    public class ComicBookService : IComicBookService
     {
         private readonly IBookRepository _bookRepository;
         
-        public BookService(IBookRepository bookRepository)
+        public ComicBookService(IBookRepository bookRepository)
         {
             _bookRepository = bookRepository;
         }
-        public List<Book> GetAll()
+        public List<ComicBook> GetAll()
         {
             return _bookRepository.GetAll();
         }
 
-        public Book GetById(int id)
+        public ComicBook GetById(int id)
         {
-            if (id <= 0) return new Book();
+            if (id <= 0) return new ComicBook();
 
             return _bookRepository.GetById(id);
         }
 
-        public void Add(Book book)
+        public void Add(ComicBook book)
         {
             _bookRepository.Add(book);
         }
@@ -34,7 +34,7 @@ namespace BookStore.BL.Services
            _bookRepository.Remove(id);
         }
 
-        public List<Book> GetAllByAuthorAfterReleaseDate
+        public List<ComicBook> GetAllByAuthorAfterReleaseDate
             (int authorId, DateTime afterDate)
         {
             var result =

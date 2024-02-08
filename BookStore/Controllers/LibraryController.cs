@@ -1,11 +1,11 @@
-﻿using BookStore.BL.Interfaces;
-using BookStore.Models.Requests;
-using BookStore.Models.Responses;
-using BookStore.Validators;
+﻿using ComicBookStore.BL.Interfaces;
+using ComicBookStore.Models.Requests;
+using ComicBookStore.Models.Responses;
+using ComicBookStore.Validators;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStore.Controllers
+namespace ComicBookStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

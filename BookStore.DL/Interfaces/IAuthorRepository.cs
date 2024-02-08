@@ -1,6 +1,6 @@
-﻿using BookStore.Models.Models.Users;
+﻿using ComicBookStore.Models.Models.Users;
 
-namespace BookStore.DL.Interfaces
+namespace ComicBookStore.DL.Interfaces
 {
     public interface IAuthorRepository
     {

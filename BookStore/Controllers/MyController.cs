@@ -1,34 +1,34 @@
-﻿using BookStore.BL.Interfaces;
-using BookStore.Models.Models;
+﻿using ComicBookStore.BL.Interfaces;
+using ComicBookStore.Models.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStore.Controllers
+namespace ComicBookStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class Book2Controller : ControllerBase
     {
-        private readonly IBookService _bookService;
+        private readonly IComicBookService _bookService;
 
-        public Book2Controller(IBookService bookService)
+        public Book2Controller(IComicBookService bookService)
         {
             _bookService = bookService;
         }
 
         [HttpGet("GetBookById")]
-        public Book GetBookById(int id)
+        public ComicBook GetBookById(int id)
         {
             return _bookService.GetById(id);
         }
 
         [HttpGet("GetAllBooks")]
-        public List<Book> GetAllBooks()
+        public List<ComicBook> GetAllBooks()
         {
             return _bookService.GetAll();
         }
 
         [HttpPost]
-        public void Add([FromBody]Book book)
+        public void Add([FromBody]ComicBook book)
         {
             _bookService.Add(book);
         }

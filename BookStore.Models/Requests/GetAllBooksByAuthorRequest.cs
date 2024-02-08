@@ -1,4 +1,4 @@
-﻿namespace BookStore.Models.Requests
+﻿namespace ComicBookStore.Models.Requests
 {
     public class GetAllBooksByAuthorRequest
     {

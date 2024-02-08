@@ -1,12 +1,12 @@
-using BookStore.BL.Interfaces;
-using BookStore.BL.Services;
-using BookStore.DL.Interfaces;
-using BookStore.DL.Repositories;
-using BookStore.Healthchecks;
+using ComicBookStore.BL.Interfaces;
+using ComicBookStore.BL.Services;
+using ComicBookStore.DL.Interfaces;
+using ComicBookStore.DL.Repositories;
+using ComicBookStore.Healthchecks;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 
-namespace BookStore
+namespace ComicBookStore
 {
     public class Program
     {
@@ -18,7 +18,7 @@ namespace BookStore
             builder.Services
                 .AddSingleton<IBookRepository, BookRepository>();
             builder.Services
-                .AddSingleton<IBookService, BookService>();
+                .AddSingleton<IComicBookService, ComicBookService>();
             builder.Services
                 .AddSingleton<IAuthorRepository, AuthorRepository>();
             builder.Services

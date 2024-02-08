@@ -1,7 +1,7 @@
-﻿using BookStore.Models.Models;
-using BookStore.Models.Models.Users;
+﻿using ComicBookStore.Models.Models;
+using ComicBookStore.Models.Models.Users;
 
-namespace BookStore.DL.MemoryDb
+namespace ComicBookStore.DL.MemoryDb
 {
     public static class InMemoryDb
     {
@@ -28,31 +28,31 @@ namespace BookStore.DL.MemoryDb
                 },
             };
 
-        public static List<Book> BookData
-            = new List<Book>()
+        public static List<ComicBook> BookData
+            = new List<ComicBook>()
             {
-                new Book()
+                new ComicBook()
                 {
                     Id = 1,
                   Title = "Book 1",
                   AuthorId = 1,
                   ReleaseDate = new DateTime(2005,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 4,
                     Title = "Book 4",
                     AuthorId = 1,
                     ReleaseDate = new DateTime(2007,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 2,
                     Title = "Book 2",
                     AuthorId = 2,
                     ReleaseDate = new DateTime(2015,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 3,
                   Title = "Book 3",

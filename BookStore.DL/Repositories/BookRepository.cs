@@ -1,23 +1,23 @@
-﻿using BookStore.DL.Interfaces;
-using BookStore.DL.MemoryDb;
-using BookStore.Models.Models;
+﻿using ComicBookStore.DL.Interfaces;
+using ComicBookStore.DL.MemoryDb;
+using ComicBookStore.Models.Models;
 
-namespace BookStore.DL.Repositories
+namespace ComicBookStore.DL.Repositories
 {
     public class BookRepository : IBookRepository
     {
-        public List<Book> GetAll()
+        public List<ComicBook> GetAll()
         {
             return InMemoryDb.BookData;
         }
 
-        public Book GetById(int id)
+        public ComicBook GetById(int id)
         {
             return InMemoryDb.BookData
                 .First(a => a.Id == id);
         }
 
-        public void Add(Book author)
+        public void Add(ComicBook author)
         {
             InMemoryDb.BookData.Add(author);
         }
@@ -28,7 +28,7 @@ namespace BookStore.DL.Repositories
             InMemoryDb.BookData.Remove(author);
         }
 
-        public List<Book> GetAllByAuthor(int authorId)
+        public List<ComicBook> GetAllByAuthor(int authorId)
         {
             return InMemoryDb.BookData
                 .Where(b => b.AuthorId == authorId)

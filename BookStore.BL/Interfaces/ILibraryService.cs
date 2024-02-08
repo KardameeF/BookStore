@@ -1,7 +1,7 @@
-﻿using BookStore.Models.Requests;
-using BookStore.Models.Responses;
+﻿using ComicBookStore.Models.Requests;
+using ComicBookStore.Models.Responses;
 
-namespace BookStore.BL.Interfaces
+namespace ComicBookStore.BL.Interfaces
 {
     public interface ILibraryService
     {

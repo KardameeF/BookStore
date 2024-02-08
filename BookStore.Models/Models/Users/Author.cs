@@ -1,4 +1,4 @@
-﻿namespace BookStore.Models.Models.Users
+﻿namespace ComicBookStore.Models.Models.Users
 {
     public class Author
     {

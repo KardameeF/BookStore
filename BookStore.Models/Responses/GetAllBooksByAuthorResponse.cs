@@ -1,12 +1,12 @@
-﻿using BookStore.Models.Models;
-using BookStore.Models.Models.Users;
+﻿using ComicBookStore.Models.Models;
+using ComicBookStore.Models.Models.Users;
 
-namespace BookStore.Models.Responses
+namespace ComicBookStore.Models.Responses
 {
     public class GetAllBooksByAuthorResponse
     {
         public Author Author { get; set; }
 
-        public List<Book> Books { get; set; }
+        public List<ComicBook> Books { get; set; }
     }
 }

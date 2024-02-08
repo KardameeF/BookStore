@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore", "BookStore\BookStore.csproj", "{049A40FC-A589-42F7-9A7B-032479C32DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBookStore", "BookStore\ComicBookStore.csproj", "{049A40FC-A589-42F7-9A7B-032479C32DB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.BL", "BookStore.BL\BookStore.BL.csproj", "{3F923DE4-3C60-4C19-8432-4D46D7422487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBookStore.BL", "BookStore.BL\ComicBookStore.BL.csproj", "{3F923DE4-3C60-4C19-8432-4D46D7422487}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.DL", "BookStore.DL\BookStore.DL.csproj", "{50199E53-4F64-4975-BD71-89A64005AF24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBookStore.DL", "BookStore.DL\ComicBookStore.DL.csproj", "{50199E53-4F64-4975-BD71-89A64005AF24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Models", "BookStore.Models\BookStore.Models.csproj", "{46D86FA3-A35C-4AC1-A1A8-9510FB5F0599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBookStore.Models", "BookStore.Models\ComicBookStore.Models.csproj", "{46D86FA3-A35C-4AC1-A1A8-9510FB5F0599}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Tests", "BookStore.Tests\BookStore.Tests.csproj", "{78F89BE8-07F3-4D5A-B966-DE90257B62CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComicBookStore.Tests", "BookStore.Tests\ComicBookStore.Tests.csproj", "{78F89BE8-07F3-4D5A-B966-DE90257B62CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

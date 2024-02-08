@@ -1,8 +1,8 @@
-﻿using BookStore.BL.Interfaces;
-using BookStore.Models.Models.Users;
+﻿using ComicBookStore.BL.Interfaces;
+using ComicBookStore.Models.Models.Users;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookStore.Controllers
+namespace ComicBookStore.Controllers
 {
     [ApiController]
     [Route("[controller]")]

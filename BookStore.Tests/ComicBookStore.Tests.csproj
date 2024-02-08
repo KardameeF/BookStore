@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookStore.BL\BookStore.BL.csproj" />
-    <ProjectReference Include="..\BookStore.DL\BookStore.DL.csproj" />
-    <ProjectReference Include="..\BookStore.Models\BookStore.Models.csproj" />
+    <ProjectReference Include="..\BookStore.BL\ComicBookStore.BL.csproj" />
+    <ProjectReference Include="..\BookStore.DL\ComicBookStore.DL.csproj" />
+    <ProjectReference Include="..\BookStore.Models\ComicBookStore.Models.csproj" />
   </ItemGroup>
 
 </Project>

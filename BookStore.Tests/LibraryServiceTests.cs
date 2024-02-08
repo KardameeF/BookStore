@@ -1,12 +1,12 @@
-using BookStore.BL.Services;
-using BookStore.DL.Interfaces;
-using BookStore.DL.Repositories;
-using BookStore.Models.Models;
-using BookStore.Models.Models.Users;
-using BookStore.Models.Requests;
+using ComicBookStore.BL.Services;
+using ComicBookStore.DL.Interfaces;
+using ComicBookStore.DL.Repositories;
+using ComicBookStore.Models.Models;
+using ComicBookStore.Models.Models.Users;
+using ComicBookStore.Models.Requests;
 using Moq;
 
-namespace BookStore.Tests
+namespace ComicBookStore.Tests
 {
     public class LibraryServiceTests
     {
@@ -33,31 +33,31 @@ namespace BookStore.Tests
                 },
             };
 
-        public static List<Book> BookData
-            = new List<Book>()
+        public static List<ComicBook> BookData
+            = new List<ComicBook>()
             {
-                new Book()
+                new ComicBook()
                 {
                     Id = 1,
                     Title = "Book 1",
                     AuthorId = 1,
                     ReleaseDate = new DateTime(2005,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 4,
                     Title = "Book 4",
                     AuthorId = 1,
                     ReleaseDate = new DateTime(2007,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 2,
                     Title = "Book 2",
                     AuthorId = 2,
                     ReleaseDate = new DateTime(2015,05,07)
                 },
-                new Book()
+                new ComicBook()
                 {
                     Id = 3,
                     Title = "Book 3",
@@ -82,7 +82,7 @@ namespace BookStore.Tests
 
             //inject
             var bookService =
-                new BookService(mockedBookRepository.Object);
+                new ComicBookService(mockedBookRepository.Object);
             var authorService = 
                 new AuthorService(new AuthorRepository());
             var service = new LibraryService(
@@ -112,7 +112,7 @@ namespace BookStore.Tests
 
             //inject
             var bookService =
-                new BookService(mockedBookRepository.Object);
+                new ComicBookService(mockedBookRepository.Object);
             var authorService =
                 new AuthorService(new AuthorRepository());
             var service = new LibraryService(
@@ -158,7 +158,7 @@ namespace BookStore.Tests
 
             //inject
             var bookService =
-                new BookService(mockedBookRepository.Object);
+                new ComicBookService(mockedBookRepository.Object);
             var authorService =
                 new AuthorService(mockedAuthorRepository.Object);
             var service = new LibraryService(

@@ -1,7 +1,7 @@
-﻿using BookStore.Models.Requests;
+﻿using ComicBookStore.Models.Requests;
 using FluentValidation;
 
-namespace BookStore.Validators
+namespace ComicBookStore.Validators
 {
     public class SomeRequestValidator : 
         AbstractValidator<SomeRequest>

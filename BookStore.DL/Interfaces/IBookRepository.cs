@@ -1,18 +1,18 @@
-﻿using BookStore.Models.Models;
-using BookStore.Models.Models.Users;
+﻿using ComicBookStore.Models.Models;
+using ComicBookStore.Models.Models.Users;
 
-namespace BookStore.DL.Interfaces
+namespace ComicBookStore.DL.Interfaces
 {
     public interface IBookRepository
     {
-        List<Book> GetAll();
+        List<ComicBook> GetAll();
 
-        Book GetById(int id);
+        ComicBook GetById(int id);
 
-        void Add(Book book);
+        void Add(ComicBook book);
 
         void Remove(int  id);
 
-        List<Book> GetAllByAuthor(int authorId);
+        List<ComicBook> GetAllByAuthor(int authorId);
     }
 }

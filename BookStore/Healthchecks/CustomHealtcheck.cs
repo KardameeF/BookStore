@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace BookStore.Healthchecks
+namespace ComicBookStore.Healthchecks
 {
     public class CustomHealthCheck : IHealthCheck
     {
